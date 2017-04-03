@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:title="Accueil"
+          android:id="@+id/nav_item_accueil"
+          android:icon="@drawable/compass_icon"/>
+
+
+    <item android:title="Selection verre"
+          android:id="@+id/nav_item_verre"
+          android:icon="@drawable/verre_icon"/>
+
+
+
+    <item android:title="Paramètres">
+        <menu>
+            <item
+                android:title="Mes Info"
+                android:icon="@drawable/profle_icon"
+                android:id="@+id/nav_item_info"
+                />
+            <item
+                android:title="Application"
+                android:icon="@drawable/tools_icon"
+                android:id="@+id/nav_item_appli"
+                />
+        </menu>
+    </item>
+
+    <group android:id="@+id/group_settings_id">
+
+        <item android:title="Déconnection"
+              android:icon="@drawable/power_icon"
+            android:id="@+id/nav_item_deco"
+
+            />
+
+    </group>
+
+
+</menu>

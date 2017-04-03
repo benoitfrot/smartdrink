@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:textColor="@color/blue"
+        android:text="Mes Informations"
+        android:padding="10dp"
+        />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/topBarRegister"
+            android:paddingBottom="10dp"
+            android:weightSum="1">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:id="@+id/rbGender"
+                    android:checkedButton="@+id/rbGenderW">
+
+                    <RadioButton
+                        android:id="@+id/rbGenderW"
+                        android:text="Woman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@android:color/background_light"
+                        android:layout_alignBaseline="@+id/rbGenderM"
+                        android:layout_alignBottom="@+id/rbGenderM"
+
+                        android:layout_marginEnd="24dp"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/background_light"
+                        android:layout_marginRight="24dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbGenderM"
+                        android:text="Man"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:buttonTint="@android:color/background_light"
+                        android:layout_alignBaseline="@+id/etAge"
+                        android:layout_alignBottom="@+id/etAge"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/background_light" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/poids"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|number"
+                    android:imeOptions="actionNext"
+                    android:ems="10"
+                    android:hint="Poids"
+                    android:layout_below="@+id/etUserName"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/etLastName"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/background_light"
+                    android:layout_marginRight="10dp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/etLastName" />
+
+                <EditText
+                    android:id="@+id/taille"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+                    android:ems="10"
+                    android:hint="Taille"
+                    android:layout_below="@+id/etUserName"
+                    android:layout_alignParentEnd="true"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/background_light"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_alignParentRight="true" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:entries="@array/ethny_arrays"
+
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:text="Select Date"
+                    android:layout_width="134dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bSelectDate"
+                    android:paddingRight="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/background_light"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="13dp"
+                    android:onClick="showDatePicker"
+                    android:paddingTop="10dp" />
+
+
+
+                <TextView
+                    android:text="BirthDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:id="@+id/tvBirthday"
+                    android:background="@android:color/background_light"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="13dp"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/bRegister"
+                android:text="Enregistrer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etPassword"
+
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp"
+                android:layout_marginBottom="15dp" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pbLoader"
+                android:indeterminate="true"
+                android:indeterminateTintMode="src_atop"
+                android:indeterminateTint="@color/colorPrimary"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

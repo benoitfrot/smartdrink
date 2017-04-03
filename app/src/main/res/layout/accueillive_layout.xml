@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/colorAccent">
+
+    <ImageView
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+
+    app:srcCompat="@drawable/car_icongrande"
+    android:id="@+id/car_icongrande"
+
+    android:layout_marginTop="19dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginLeft="15dp"
+    android:layout_marginStart="15dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/bar"
+        android:layout_below="@+id/car_icongrande"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:textColor="@color/black"
+        android:text="Consommation\n En cours"
+        android:layout_marginTop="15dp"
+        android:layout_alignTop="@+id/car_icongrande"
+        android:layout_toRightOf="@+id/car_icongrande"
+        android:layout_toEndOf="@+id/car_icongrande"
+        android:layout_marginLeft="81dp"
+        android:layout_marginStart="81dp" />
+
+    <TextView
+        android:text="Votre niveau d'alcool est : 0,2 g/L "
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar"
+        android:layout_alignLeft="@+id/car_icongrande"
+        android:layout_alignStart="@+id/car_icongrande"
+        android:layout_marginTop="109dp"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:text=" Vous êtes autorisés a prendre la voiture si vous êtes conducteur confirmé "
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <Button
+            android:id="@+id/start"
+            android:text="Let's drink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/background_light"
+            android:textSize="15dp"
+
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignTop="@+id/Selectverre"
+            android:layout_toStartOf="@+id/Selectverre"
+            android:layout_toLeftOf="@+id/Selectverre"
+            android:layout_weight="0.89" />
+
+        <Button
+            android:id="@+id/selectverre"
+            android:text="Sélection verre"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp"
+            android:layout_weight="0.22" />
+
+    </LinearLayout>
+</RelativeLayout>

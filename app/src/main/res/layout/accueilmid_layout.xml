@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/car_icongrande"
+        android:id="@+id/car_icon"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+
+        android:layout_marginTop="38dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/next"
+
+        android:id="@+id/next"
+        android:layout_marginTop="20dp"
+        android:layout_alignTop="@+id/car_icon"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginRight="48dp"
+        android:layout_marginEnd="48dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:id="@+id/textView2"
+        android:textColor="@color/black"
+        android:text="Consommation Actuelle"
+        android:layout_below="@+id/car_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/bar"
+        android:layout_marginTop="270dp"
+        android:layout_alignParentTop="true" />
+
+
+
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/previous"
+        android:id="@+id/previous"
+
+        android:layout_marginBottom="19dp"
+        android:layout_above="@+id/textView"
+        android:layout_alignRight="@+id/car_icon"
+        android:layout_alignEnd="@+id/car_icon"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/pie_chart_icon"
+        android:id="@+id/pie_chart_icon"
+
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_below="@+id/bar"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginTop="37dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:textColor="@color/black"
+        android:text="Historique Consommation"
+        android:layout_below="@+id/pie_chart_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp" />
+</RelativeLayout>
