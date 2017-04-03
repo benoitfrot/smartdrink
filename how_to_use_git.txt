@@ -1,0 +1,16 @@
+1) Initlaize git repo
+-git init dans le dossier local
+-git add -A (ajoute tout dans le commit)
+-git commit -m "message" (commit)
+-git remote add origin https://github.com/benoitfrot/smartdrink.git
+-git push origin master
+
+2) Modification and push 
+-git add -A 
+-git commit -m "message"
+-git push origin master
+
+3) retrieve
+
+git pull origin master
+
